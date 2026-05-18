@@ -228,6 +228,21 @@ button:hover{
     padding:25px;
     border-radius:15px;
     margin-top:25px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.certificate-card h3{
+    flex:1;
+    margin:0;
+}
+
+.certificate-card a{
+    text-decoration:none;
 }
 
 /* TYPING EFFECT */
@@ -416,26 +431,24 @@ border-radius:20px ;}
     background: white;
     color: #ff4da6;
 }
+    @media(max-width:768px){
+
+    .certificate-card{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .certificate-card button{
+        width:100%;
+    }
+
+}
 </style>
 
-</head>
-
-<body>
 
 <!-- FULL HTML HERE -->
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
 
     <!-- NAVBAR -->
 
@@ -507,7 +520,6 @@ border-radius:20px ;}
 
     </section>
 
-</body>
 
 <!-- ACADEMIC -->
 
@@ -732,7 +744,6 @@ border-radius:20px ;}
     <p>© 2026 FEMINABANU | All Rights Reserved</p>
 
 </footer>
-</html>
 </body>
 
 </html>
